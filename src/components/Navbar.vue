@@ -34,7 +34,6 @@ const tabs = [
 nav {
     background: var(--bg1);
 
-
     .desktop {
         margin-left: 1ch;
         padding: 0 1ch;

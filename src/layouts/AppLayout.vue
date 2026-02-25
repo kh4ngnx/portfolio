@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import TitleBar from '@/components/TitleBar.vue';
-import Navbar from '@/components/Navbar.vue';
+import TitleBar from "@/components/TitleBar.vue";
+import Navbar from "@/components/Navbar.vue";
 </script>
 
 <template>
     <div class="app-window">
-        <header>
+        <header class="app-header">
             <TitleBar />
-            <Navbar />
+            <Navbar class="app-navbar" />
         </header>
 
         <main class="app-main">

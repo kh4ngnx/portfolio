@@ -168,7 +168,7 @@ h2 {
         border: 1px solid var(--bg4);
         height: auto;
         flex: 1;
-        max-width: 12ch;
+        max-width: 15ch;
 
         .track {
             height: 100%;
