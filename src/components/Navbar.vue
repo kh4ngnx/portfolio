@@ -44,7 +44,7 @@ nav {
 
     .tab {
         text-decoration: none;
-        color: var(--grey0);
+        color: var(--grey1);
         border-left: 1px solid var(--bg3);
         padding: 0.5lh 2ch;
 

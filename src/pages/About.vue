@@ -30,7 +30,7 @@
     <section class="myself">
         <ul class="summary">
             <li style="color: var(--grey2)">Sinh viên năm 4</li>
-            <li>
+            <li class="tech">
                 <span style="color: var(--aqua)">Vue</span> -
                 <span style="color: var(--red)">Laravel</span> -
                 <span style="color: var(--orange)">MySQL</span>
@@ -180,6 +180,7 @@
         border: 1px dashed var(--bg4);
         grid-area: summary;
         border-left: 4px solid var(--green);
+        color: var(--grey2);
 
         &:hover {
             background: var(--bg1);
@@ -188,6 +189,10 @@
         li {
             margin-bottom: 0.3lh;
             color: var(--grey2);
+
+            .tech {
+                font-weight: bold;
+            }
         }
 
         li:last-of-type {
