@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "@webtui/css": "^0.1.6",
+        "@webtui/plugin-nf": "^0.1.1",
         "vue": "^3.5.28",
         "vue-router": "^5.0.2"
     },

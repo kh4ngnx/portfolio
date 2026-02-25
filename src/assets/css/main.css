@@ -2,10 +2,11 @@
 @import "@webtui/css/base.css";
 @import "@webtui/css/utils/box.css";
 @import "@webtui/css/components/typography.css";
+@import "@webtui/plugin-nf";
 
 @layer base {
     :root {
-        --font-family: "JetBrains Mono", monospace;
+        --font-family: "JetBrains Mono", monospace, "Symbols Nerd Font";
         --font-size: 16px;
         --font-weight-bold: 700;
         --font-weight-normal: 400;

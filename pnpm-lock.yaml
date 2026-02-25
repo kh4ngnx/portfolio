@@ -11,6 +11,9 @@ importers:
       '@webtui/css':
         specifier: ^0.1.6
         version: 0.1.6
+      '@webtui/plugin-nf':
+        specifier: ^0.1.1
+        version: 0.1.1
       vue:
         specifier: ^3.5.28
         version: 3.5.29(typescript@5.9.3)
@@ -616,6 +619,9 @@ packages:
 
   '@webtui/css@0.1.6':
     resolution: {integrity: sha512-pYQ7wE5R2ZC4Suj/BtHg5oG1HPhX+RXfFPh/pn8b+Eb+GHmL7rT8RrKkywLgtExNBD0kdqrEDHAr7pjs6PNNBg==}
+
+  '@webtui/plugin-nf@0.1.1':
+    resolution: {integrity: sha512-ZzimzGtjV8kIng/gzPPXkgFBjJ11rCn9lYc/JnlI/9PyHfvaSDJi90k7i6oTFAa94osJL2wLGgg9l8WjMwTMSw==}
 
   acorn@8.16.0:
     resolution: {integrity: sha512-UVJyE9MttOsBQIDKw1skb9nAwQuR5wuGD3+82K6JgJlm/Y+KI92oNsMNGZCYdDsVtRHSak0pcV5Dno5+4jh9sw==}
@@ -1653,6 +1659,8 @@ snapshots:
       vue: 3.5.29(typescript@5.9.3)
 
   '@webtui/css@0.1.6': {}
+
+  '@webtui/plugin-nf@0.1.1': {}
 
   acorn@8.16.0: {}
 
