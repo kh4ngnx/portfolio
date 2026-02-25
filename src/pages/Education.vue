@@ -42,7 +42,7 @@
     flex: 1;
 
     h2 {
-        margin-bottom: 1lh;
+        margin-bottom: 1.5lh;
         padding-bottom: 0.5lh;
         color: var(--grey0);
         font-size: 20px;

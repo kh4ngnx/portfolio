@@ -1,37 +1,41 @@
 <template>
+    <h2>// SKILLS</h2>
     <div class="layout">
         <section class="frontend">
             <span class="title">frontend</span>
             <div class="container">
-                <h2> Frontend</h2>
-                <ul marker-="open tree">
+                <h2>
+                    <span class="icon"></span>
+                    Frontend
+                </h2>
+                <ul>
                     <li>
-                        <span class="label">HTML5 / CSS3</span>
-                        <span class="bar">
-                            <span is-="progress" style="--progress-value: 8"></span>
-                            <span>80%</span>
-                        </span>
+                        <span class="label">├─ HTML5 / CSS3</span>
+                        <div class="bar">
+                            <div class="track" style="width: 90%"></div>
+                        </div>
+                        <span>90%</span>
                     </li>
                     <li>
-                        <span class="label">Javascript</span>
-                        <span class="bar">
-                            <span is-="progress" style="--progress-value: 4"></span>
-                            <span>40%</span>
-                        </span>
+                        <span class="label">├─ Javascript</span>
+                        <div class="bar">
+                            <div class="track" style="width: 40%"></div>
+                        </div>
+                        <span>40%</span>
                     </li>
                     <li>
-                        <span class="label">Vue.js</span>
-                        <span class="bar">
-                            <span is-="progress" style="--progress-value: 5.5"></span>
-                            <span>55%</span>
-                        </span>
+                        <span class="label">├─ Vue.js</span>
+                        <div class="bar">
+                            <div class="track" style="width: 55%"></div>
+                        </div>
+                        <span>55%</span>
                     </li>
                     <li>
-                        <span class="label">TailwindCSS</span>
-                        <span class="bar">
-                            <span is-="progress" style="--progress-value: 6.3"></span>
-                            <span>63%</span>
-                        </span>
+                        <span class="label">└─ TailwindCSS</span>
+                        <div class="bar">
+                            <div class="track" style="width: 63%"></div>
+                        </div>
+                        <span>63%</span>
                     </li>
                 </ul>
             </div>
@@ -39,42 +43,48 @@
         <section class="backend">
             <span class="title">backend</span>
             <div class="container">
-                <h2> Backend</h2>
+                <h2>
+                    <span class="icon"></span>
+                    Backend
+                </h2>
                 <ul marker-="open tree">
                     <li>
-                        <span class="label">PHP</span>
-                        <span class="bar">
-                            <span is-="progress" style="--progress-value: 5"></span>
-                            <span>50%</span>
-                        </span>
+                        <span class="label">├─ PHP</span>
+                        <div class="bar">
+                            <div class="track" style="width: 50%"></div>
+                        </div>
+                        <span>50%</span>
                     </li>
                     <li>
-                        <span class="label">Laravel</span>
-                        <span class="bar">
-                            <span is-="progress" style="--progress-value: 7"></span>
-                            <span>70%</span>
-                        </span>
+                        <span class="label">├─ Laravel</span>
+                        <div class="bar">
+                            <div class="track" style="width: 70%"></div>
+                        </div>
+                        <span>70%</span>
                     </li>
                     <li>
-                        <span class="label">MySQL</span>
-                        <span class="bar">
-                            <span is-="progress" style="--progress-value: 3.6"></span>
-                            <span>36%</span>
-                        </span>
+                        <span class="label">├─ MySQL</span>
+                        <div class="bar">
+                            <div class="track" style="width: 36%"></div>
+                        </div>
+                        <span>36%</span>
                     </li>
                     <li>
-                        <span class="label">REST API</span>
-                        <span class="bar">
-                            <span is-="progress" style="--progress-value: 8.4"></span>
-                            <span>84%</span>
-                        </span>
+                        <span class="label">└─ REST API</span>
+                        <div class="bar">
+                            <div class="track" style="width: 84%"></div>
+                        </div>
+                        <span>84%</span>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="tools">
             <span class="title">tools</span>
-            <h2> Tools & Others</h2>
+            <h2>
+                <span class="icon"></span>
+                Tools & Others
+            </h2>
             <div class="container">
                 <span>Git</span>
                 <span>DB Design</span>
@@ -91,6 +101,14 @@
     justify-content: space-between;
 }
 
+h2 {
+    margin-bottom: 1.5lh;
+    padding-bottom: 0.5lh;
+    color: var(--grey0);
+    font-size: 20px;
+    border-bottom: 2px dashed var(--bg3);
+}
+
 .frontend,
 .backend,
 .tools {
@@ -105,8 +123,13 @@
     }
 
     h2 {
+        border: none;
         color: var(--green);
-        margin-bottom: 0.7lh;
+        padding-bottom: 0;
+        margin: 0.3lh 0 0.7lh;
+        display: flex;
+        align-items: center;
+        gap: 1ch;
     }
 
     .title {
@@ -120,10 +143,19 @@
     }
 
     ul {
-        margin: 0 1ch;
+        margin-right: 1ch;
+        li::before {
+            content: "";
+        }
 
         li {
-            margin-bottom: 0.5lh;
+            margin-bottom: 1lh;
+            display: flex;
+            gap: 2ch;
+
+            .label {
+                flex: 1;
+            }
         }
 
         li:last-of-type {
@@ -132,10 +164,17 @@
     }
 
     .bar {
-        float: right;
-        display: flex;
-        gap: 2ch;
-        width: 15ch;
+        background: var(--bg3);
+        border: 1px solid var(--bg4);
+        height: auto;
+        flex: 1;
+        max-width: 12ch;
+
+        .track {
+            height: 100%;
+            background: var(--green);
+            opacity: 0.8;
+        }
     }
 }
 

@@ -31,8 +31,8 @@
         <ul class="summary">
             <li style="color: var(--grey2)">Sinh viên năm 4</li>
             <li class="tech">
-                <span style="color: var(--aqua)">Vue</span> -
-                <span style="color: var(--red)">Laravel</span> -
+                <span style="color: var(--aqua)">Vue</span> •
+                <span style="color: var(--red)">Laravel</span> •
                 <span style="color: var(--orange)">MySQL</span>
             </li>
             <li style="color: var(--yellow)">RESTful API</li>
