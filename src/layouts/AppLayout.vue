@@ -26,5 +26,6 @@ import Navbar from '@/components/Navbar.vue';
 .app-main {
     flex: 1;
     overflow-y: auto;
+    padding: 2lh 2ch;
 }
 </style>
