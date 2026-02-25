@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import TitleBar from '@/components/TitleBar.vue';
 import Navbar from '@/components/Navbar.vue';
-import StatusBar from '@/components/StatusBar.vue';
 </script>
 
 <template>
@@ -14,10 +13,6 @@ import StatusBar from '@/components/StatusBar.vue';
         <main class="app-main">
             <RouterView />
         </main>
-
-        <footer>
-            <StatusBar />
-        </footer>
     </div>
 </template>
 
@@ -26,6 +21,7 @@ import StatusBar from '@/components/StatusBar.vue';
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    border: 1px solid var(--bg3);
 }
 .app-main {
     flex: 1;
