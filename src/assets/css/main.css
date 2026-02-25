@@ -2,6 +2,7 @@
 @import "@webtui/css/base.css";
 @import "@webtui/css/utils/box.css";
 @import "@webtui/css/components/typography.css";
+@import "@webtui/css/components/progress.css";
 @import "@webtui/plugin-nf";
 
 @layer base {
@@ -42,5 +43,25 @@
         --foreground0: var(--fg);
         --foreground1: var(--grey1);
         --foreground2: var(--grey2);
+    }
+}
+
+@layer components {
+    /* Progress bar */
+    [is-~="progress"] {
+        border: 1px solid var(--bg4);
+        --progress-max: 10;
+        --progress-empty-background: var(--bg3);
+        --progress-value-background: var(--green);
+    }
+    /* List `open tree` */
+    ul[marker-~="tree"] {
+        li::before {
+            content: "├─ ";
+        }
+
+        &:not([marker-$="open"]) li:last-of-type::before {
+            content: "└─ ";
+        }
     }
 }

@@ -22,7 +22,7 @@
             </span>
             <span class="github">
                 <span class="icon"></span>
-                <a href="https://github.com/kh4ngnx">github.com/kh4ngnx</a>
+                <a href="https://github.com/kh4ngnx" target="_blank">github.com/kh4ngnx</a>
             </span>
         </div>
     </section>
