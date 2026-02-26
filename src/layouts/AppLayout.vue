@@ -7,7 +7,7 @@ import Navbar from "@/components/Navbar.vue";
     <div class="app-window">
         <header class="app-header">
             <TitleBar />
-            <Navbar class="app-navbar" />
+            <Navbar />
         </header>
 
         <main class="app-main">
@@ -27,5 +27,10 @@ import Navbar from "@/components/Navbar.vue";
     flex: 1;
     overflow-y: auto;
     padding: 2lh 2ch;
+}
+@media (max-width: 768px) {
+    .app-main {
+        padding-bottom: calc(100px + env(safe-area-inset-bottom));
+    }
 }
 </style>

@@ -65,7 +65,7 @@ nav {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     nav {
         width: 100%;
         padding: 0;
@@ -86,9 +86,10 @@ nav {
             padding: 1lh 0;
             color: var(--grey1);
             border-left: 1px solid var(--bg3);
+            font-size: clamp(14px, 2.5vw, 20px);
 
             .icon {
-                font-size: 20px;
+                font-size: clamp(14px, 2.5vw, 20px);
             }
         }
 
@@ -102,13 +103,6 @@ nav {
             background: var(--bg-green);
             font-weight: 600;
             border: none;
-        }
-    }
-}
-@media (max-width: 400px) {
-    nav {
-        .tab {
-            font-size: 14px;
         }
     }
 }
