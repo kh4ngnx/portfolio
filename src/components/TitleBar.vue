@@ -11,7 +11,7 @@ const { width, height } = useWindowSize()
             <span class="max"></span>
         </div>
 
-        <div v-if="width > 600" class="title">portfolio ~ nguyen-xuan-khang</div>
+        <div v-if="width > 1024" class="title">portfolio ~ nguyen-xuan-khang</div>
         <div v-else class="title">portfolio</div>
 
         <div class="size">{{ width }}×{{ height }}</div>

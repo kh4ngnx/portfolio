@@ -20,7 +20,7 @@ import Navbar from "@/components/Navbar.vue";
 .app-window {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     border: 1px solid var(--bg3);
 }
 .app-main {
