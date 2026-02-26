@@ -11,35 +11,29 @@ const tabs = [
 </script>
 <template>
     <nav>
-        <div class="desktop">
-            <RouterLink
-                class="tab"
-                v-for="tab in tabs"
-                :key="tab.key"
-                :to="tab.path"
-                :class="{ active: route.meta.tab === tab.key }"
-            >
-                <span class="icon">
-                    {{ tab.icon }}
-                </span>
-                <span class="label">
-                    {{ tab.label }}
-                </span>
-            </RouterLink>
-        </div>
+        <RouterLink
+            class="tab"
+            v-for="tab in tabs"
+            :key="tab.key"
+            :to="tab.path"
+            :class="{ active: route.meta.tab === tab.key }"
+        >
+            <span class="icon">
+                {{ tab.icon }}
+            </span>
+            <span class="label">
+                {{ tab.label }}
+            </span>
+        </RouterLink>
     </nav>
 </template>
 
 <style scoped>
 nav {
     background: var(--bg1);
+    padding: 0 2ch;
 
-    .desktop {
-        margin-left: 1ch;
-        padding: 0 1ch;
-
-        display: flex;
-    }
+    display: flex;
 
     .tab {
         text-decoration: none;
@@ -50,10 +44,6 @@ nav {
         display: flex;
         align-items: center;
         gap: 1ch;
-
-        .icon {
-            font-size: 12px;
-        }
     }
 
     .tab:hover:not(.active) {
@@ -72,6 +62,54 @@ nav {
         border-bottom: 2px solid var(--green);
         font-weight: 600;
         padding-bottom: 0.4lh;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        width: 100%;
+        padding: 0;
+        padding-bottom: env(safe-area-inset-bottom);
+        position: fixed;
+        bottom: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .tab {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5lh;
+            align-items: center;
+            padding: 1lh 0;
+            color: var(--grey1);
+            border-left: 1px solid var(--bg3);
+
+            .icon {
+                font-size: 20px;
+            }
+        }
+
+        .tab:last-of-type {
+            border-left: 1px solid var(--bg3);
+            border-right: 1px solid var(--bg3);
+        }
+
+        .active {
+            color: var(--green);
+            background: var(--bg-green);
+            font-weight: 600;
+            border: none;
+        }
+    }
+}
+@media (max-width: 400px) {
+    nav {
+        .tab {
+            font-size: 14px;
+        }
     }
 }
 </style>
