@@ -121,6 +121,11 @@
             }
         }
     }
+}
 
+@media (max-width: 64rem) {
+    .layout {
+        flex-direction: column;
+    }
 }
 </style>

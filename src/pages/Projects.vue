@@ -4,7 +4,7 @@
     <div class="container">
         <div class="title">
             <h3>Web Thương Mại Điện Tử – Laravel 12</h3>
-            <span>Leader – FullStack Dev</span>
+            <span>Leader</span>
         </div>
         <div class="tech-stack">
             <span>Laravel 12</span>
@@ -43,10 +43,11 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 0.5lh;
+        gap: 4ch;
 
         h3 {
-            font-size: 18px;
-            margin-bottom: 0.5lh;
+            font-size: 20px;
         }
 
         span {
@@ -57,11 +58,13 @@ h2 {
     }
 
     .tech-stack {
+        display: flex;
+        gap: 1ch;
+        flex-wrap: wrap;
         span {
             background: var(--bg-blue);
             color: var(--blue);
             padding: 0.2lh 1ch;
-            margin-right: 1ch;
         }
     }
 
@@ -70,6 +73,7 @@ h2 {
         border: 1px dashed var(--bg4);
         color: var(--aqua);
         padding: 0.5lh 2ch;
+        font-size: clamp(14px, 2.5vw, 16px);
 
         a {
             margin-left: 2ch;
@@ -78,3 +82,5 @@ h2 {
     }
 }
 </style>
+
+
