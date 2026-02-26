@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { useWindowSize } from '@vueuse/core';
+
+const { width, height } = useWindowSize()
+</script>
 <template>
     <div class="bar">
         <div class="btns">
@@ -6,9 +11,10 @@
             <span class="max"></span>
         </div>
 
-        <span class="title">portfolio ~ nguyen-xuan-khang</span>
+        <div v-if="width >= 600" class="title">portfolio ~ nguyen-xuan-khang</div>
+        <div v-else class="title">portfolio</div>
 
-        <span class="size">80×24</span>
+        <div class="size">{{ width }}×{{ height }}</div>
     </div>
 </template>
 
@@ -17,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 2ch;
     padding: 0.5lh 2ch;
     background: var(--bg1);
     border-bottom: 1px solid var(--bg3);
@@ -28,8 +35,8 @@
 
         span {
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
         }
 
         .close {
