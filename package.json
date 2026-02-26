@@ -12,6 +12,7 @@
         "format": "prettier --write --experimental-cli src/"
     },
     "dependencies": {
+        "@vueuse/core": "^14.2.1",
         "@webtui/css": "^0.1.6",
         "@webtui/plugin-nf": "^0.1.1",
         "vue": "^3.5.28",
