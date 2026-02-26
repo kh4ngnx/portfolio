@@ -65,13 +65,13 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 64rem) {
     nav {
         width: 100%;
         padding: 0;
-        padding-bottom: env(safe-area-inset-bottom);
         position: fixed;
         bottom: 0;
+        z-index: 100;
 
         display: flex;
         align-items: center;

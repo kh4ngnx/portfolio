@@ -10,7 +10,14 @@
                 </h2>
                 <ul>
                     <li>
-                        <span class="label">├─ HTML5 / CSS3</span>
+                        <span class="label">├─ HTML5</span>
+                        <div class="bar">
+                            <div class="track" style="width: 90%"></div>
+                        </div>
+                        <span>90%</span>
+                    </li>
+                    <li>
+                        <span class="label">├─ CSS3</span>
                         <div class="bar">
                             <div class="track" style="width: 90%"></div>
                         </div>
@@ -31,7 +38,7 @@
                         <span>55%</span>
                     </li>
                     <li>
-                        <span class="label">└─ TailwindCSS</span>
+                        <span class="label">└─ Tailwind</span>
                         <div class="bar">
                             <div class="track" style="width: 63%"></div>
                         </div>
@@ -154,7 +161,7 @@ h2 {
             gap: 2ch;
 
             .label {
-                flex: 1;
+                flex: 2;
             }
         }
 
@@ -168,7 +175,6 @@ h2 {
         border: 1px solid var(--bg4);
         height: auto;
         flex: 1;
-        max-width: 15ch;
 
         .track {
             height: 100%;
@@ -182,11 +188,18 @@ h2 {
     .container {
         display: flex;
         gap: 1ch;
+        flex-wrap: wrap;
         span {
             background: var(--bg-blue);
             color: var(--blue);
             padding: 0.2lh 1ch;
         }
+    }
+}
+
+@media (max-width: 64rem) {
+    .layout {
+        flex-direction: column;
     }
 }
 </style>

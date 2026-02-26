@@ -201,7 +201,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 64rem) {
     .whoami {
         .container {
             margin: 1lh 2ch;

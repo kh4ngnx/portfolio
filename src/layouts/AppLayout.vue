@@ -28,7 +28,7 @@ import Navbar from "@/components/Navbar.vue";
     overflow-y: auto;
     padding: 2lh 2ch;
 }
-@media (max-width: 768px) {
+@media (max-width: 64rem) {
     .app-main {
         padding-bottom: calc(100px + env(safe-area-inset-bottom));
     }
