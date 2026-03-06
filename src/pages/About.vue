@@ -6,7 +6,7 @@
             <span class="name">NGUYỄN XUÂN KHANG</span>
             <span class="position">
                 <span class="icon"></span>
-                <span class="label">Full-Stack Developer</span>
+                <span class="label">Frontend Developer</span>
             </span>
             <span class="location">
                 <span class="icon"></span>
