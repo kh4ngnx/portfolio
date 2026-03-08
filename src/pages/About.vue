@@ -6,7 +6,7 @@
             <span class="name">NGUYỄN XUÂN KHANG</span>
             <span class="position">
                 <span class="icon"></span>
-                <span class="label">Frontend Developer</span>
+                <span class="label">Full-Stack Developer</span>
             </span>
             <span class="location">
                 <span class="icon"></span>
@@ -32,11 +32,9 @@
             <li style="color: var(--grey2)">Sinh viên năm 4</li>
             <li class="tech">
                 <span style="color: var(--aqua)">Vue</span> •
-                <span style="color: var(--red)">Laravel</span> •
-                <span style="color: var(--orange)">MySQL</span>
+                <span style="color: var(--red)">Laravel</span>
             </li>
             <li style="color: var(--yellow)">RESTful API</li>
-            <li><strong style="color: var(--green)">Leader</strong> dự án thực tế...</li>
         </ul>
         <div class="student-year">
             <strong style="color: var(--green)">4th</strong>
