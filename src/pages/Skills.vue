@@ -158,7 +158,7 @@ h2 {
         li {
             margin-bottom: 1lh;
             display: flex;
-            gap: 2ch;
+            gap: 1ch;
 
             .label {
                 flex: 2;

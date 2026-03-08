@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { useWindowSize } from '@vueuse/core';
+
+const { width } = useWindowSize()
+</script>
 <template>
     <div class="layout">
         <section class="education">
@@ -22,7 +27,8 @@
                     <span class="icon" style="color: var(--blue);"></span>
                     <div class="info">
                         <h3>TOEIC</h3>
-                        <span>Listening & Reading</span>
+                        <span v-if="width > 1024">Listening & Reading</span>
+                        <span v-else>L & R</span>
                     </div>
                     <strong class="score" style="color: var(--yellow);">900</strong>
                 </div>
