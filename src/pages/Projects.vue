@@ -1,22 +1,38 @@
 <template>
-    <h2>// PROJECTS [1]</h2>
+    <h2>// PROJECTS [2]</h2>
 
     <div class="container">
-        <div class="title">
-            <h3>Web Thương Mại Điện Tử – Laravel 12</h3>
-            <span>Leader</span>
+        <div class="item">
+            <div class="title">
+                <h3>Web Thương Mại Điện Tử</h3>
+            </div>
+            <div class="tech-stack">
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>TailwindCSS</span>
+            </div>
+            <div class="link">
+                <span class="icon"></span>
+                <a href="https://github.com/kh4ngnx/laravel-ecom" target="_blank"
+                    >github.com/kh4ngnx/laravel-ecom</a
+                >
+            </div>
         </div>
-        <div class="tech-stack">
-            <span>Laravel 12</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>TailwindCSS</span>
-        </div>
-        <div class="link">
-            <span class="icon"></span>
-            <a href="https://github.com/kh4ngnx/laravel-ecom" target="_blank"
-                >github.com/kh4ngnx/laravel-ecom</a
-            >
+        <div class="item">
+            <div class="title">
+                <h3>Git Commit CLI</h3>
+            </div>
+            <div class="tech-stack">
+                <span>Node.js</span>
+                <span>Javascript</span>
+            </div>
+            <div class="link">
+                <span class="icon"></span>
+                <a href="https://github.com/kh4ngnx/git-commit-cli" target="_blank"
+                    >github.com/kh4ngnx/git-commit-cli</a
+                >
+            </div>
         </div>
     </div>
 </template>
@@ -31,6 +47,12 @@ h2 {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1lh;
+}
+
+.item {
     border: 1px solid var(--bg4);
     background: var(--bg2);
     padding: 1lh 2ch;
@@ -82,5 +104,3 @@ h2 {
     }
 }
 </style>
-
-
